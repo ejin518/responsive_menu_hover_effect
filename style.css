@@ -1,0 +1,37 @@
+body {background:#113d34; padding:30px 0;}
+.section ul li {float:left; width:calc(100%/3); position:relative; overflow:hidden; z-index:0;}
+.section ul li:before {content:""; width:calc(100% - 20px); height:calc(100% - 20px); border:1px solid #fff; position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); z-index:5; opacity:0; transition:0.8s all;}
+.section ul li:hover:before {opacity:1;}
+.section ul li:hover img {transform:scale(1.1);}
+.section ul li:hover div {transform:translateY(-100px);}
+.section ul li:hover h3:before {opacity:0;}
+.section ul li:hover a {opacity:1;}
+.section ul li a:hover:before {width:200%; height:200%;}
+.section ul li img {transition:0.8s all; width:100%;}
+.section ul li img.sec_tab {display:none;}
+.section ul li img.sec_mob {display:none;}
+.section ul li div {position:absolute; top:50%; width:100%; text-align:center; transition:0.8s all; z-index:5;}
+.section ul li div h3 {font-size:30px; color:#fff; }
+.section ul li div h3:before {content:""; width:40px; height:1px; background:#fff; display:block; margin:0 auto; opacity:1; transition:0.8s all;}
+.section ul li div p {font-size:18px; color:#fff; }
+.section ul li a {display:block; width:120px; height:120px; border:1px solid #fff; line-height:118px; text-align:center; margin:30px auto 0; color:#fff; opacity:0; transitioN:0.8s all; position:relative; overflow:hidden; }
+.section ul li a:before {content:""; width:120px; height:120px; background:#fd5100; transform:rotate(45deg); position:absolute; top:-80px; left:-80px; transition:0.8s all; z-index:-1;}
+
+@media screen and (max-width:1024px){
+
+.section ul li {float:none; width:100%;}
+.section ul li:hover div {transform:translateY(-60px);}
+.section ul li img.sec_pc {display:none;}
+.section ul li img.sec_tab {display:block;}
+.section ul li div {top:40%;}
+.section ul li a {width:98px; height:63px; line-height:63px;}
+.section ul li a:hover:before {width:300%; height:300%;}
+
+}
+
+@media screen and (max-width:768px){
+
+.section ul li img.sec_tab {display:none;}
+.section ul li img.sec_mob {display:block;}
+
+}e/visual_img01.jpg) center top no-repeat; background-size:cover; }
